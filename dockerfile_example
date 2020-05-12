@@ -1,4 +1,12 @@
-### Exemple
+### Exemple dockerfile
+
+FROM ubuntu:18.04
+COPY . /app
+RUN make /app
+CMD python /app/app.py
+
+
+### Exemple pihole
 
 FROM multiarch/debian-debootstrap:arm64-stretch-slim
 
